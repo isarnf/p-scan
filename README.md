@@ -5,11 +5,13 @@ The main purpose of the project is to develop a CNN model which is able to analy
 
 - The model has an accuracy of approximately 87%
 
-- An interface was created using Gradio. A web link is active for 72 hours as soon as the jupyter project is run. 
+- An interface was created using Gradio. A web link is active for 72 hours as soon as the Gradio interface is generated. The interface has a login screen where you can try the user "admin" and password "password".
 
-- The interface allows you to create a report based on the classification result. As soon as you click on "Create Report" button, a pdf is generated inside the directory "reports"
+- The interface allows you to create a report based on the classification result. As soon as you click on "Create Report" button, a .pdf file is generated inside the "reports" directory 
 
-- To run the notebook you will need Jupyter Notebooks installed, as well as the requirements.txt. To install the requirements.txt run the following line: pip install -r requirements.txt
+- To run the notebook you will need Jupyter Notebooks installed, as well as the "requirements.txt" file. To install the "requirements.txt" file run the following line: pip install -r requirements.txt
+
+- If you want to start running the cells with the model already trained, find the cell that contains "model = tf.keras.models.load_model(notebook_path + '/savedModel')", uncomment everything there and run selected cell and  all others below that.
 
 - The dataset can be found at: https://www.kaggle.com/datasets/artyomkolas/3-kinds-of-pneumonia. Please download it and extract it in the same folder where the notebook is located. Keep the name "Curated_X-Ray_Dataset" to avoid path errors.
 
